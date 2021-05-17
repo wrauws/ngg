@@ -1,0 +1,28 @@
+@import "theme/child_theme_variables";                   // <------- Add your variables into this file. Also add variables to overwrite Bootstrap variables here
+@import "assets/bootstrap4";                             // <------- Loads Bootstrap4
+@import "../src/sass/understrap/understrap/understrap";  // <------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
+@import "../src/sass/understrap/understrap/woocommerce"; // <------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you don´t use the corresponding scripts/fonts comment em out
+@import "assets/font-awesome";                           // <------- Font Awesome Icon font
+@import "assets/underscores";                            // <------- Underscores media styles
+
+// Any additional imported files //
+@import "theme/child_theme";                             // <------- Add your styles into this file
+@import "../src/sass/understrap/theme/contact-form7";    // <------- Loads some basic styling for contact form 7 plugin
+
+// Custom Styling Here! 
+//bootstrap changes
+@import "theme/bootstrap_basics"; // <--- Styling to change default bootstrap options/values (container width etc)
+// Header Styling
+@import "theme/header"; // <--- Add the styling for the header (header.php)
+// Page Styling
+@import "theme/page"; // <--- Add styling for the page ()
+// Content styling
+@import "theme/content"; // <--- Add content for all content
+// Post styling
+@import "theme/post";
+// Sidebar Styling
+@import "theme/sidebar"; // <--- Add styling for the sidebar (Multiple files, mostly sidebar-templates/sidebar-right.php)
+// Footer Styling
+@import "theme/footer"; // <--- Add styling for the footer (footer.php)

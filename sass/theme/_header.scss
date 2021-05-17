@@ -1,0 +1,25 @@
+
+// Styling for the header (header.php)
+
+.header-style {
+    background-color: $main;
+}
+
+//padding fix
+#main-nav .container {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+// Banner Settings
+#wrapper-banner {
+    background-color: $main;
+}
+#wrapper-banner img {
+    width: 100%;
+    height: 91px !important;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+// navbar toggler fix (for ipad/tablet)

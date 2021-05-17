@@ -1,0 +1,10 @@
+//an padding fix & settings
+#right-sidebar {
+    padding: 30px;
+    background-color: $secondary;
+}
+
+//search fix (default has no padding)
+#right-sidebar .widget_search {
+    padding-bottom: 30px; //  same as top sidebar 
+}

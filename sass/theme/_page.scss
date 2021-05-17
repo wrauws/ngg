@@ -1,0 +1,20 @@
+
+// Changes the styling of the page
+
+#page-wrapper.wrapper {
+    padding: 0px; // removes the padding, padding is added on the primary to get a full background height
+    height: 100%;
+}
+
+#primary {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 0px !important;
+    padding-right: 30px !important;
+}
+
+//search page padding fix
+// ! cant delete the padding on .wrapper (this deletes padding on parts you dont want gone)
+#search-wrapper {
+    padding: 0px 0px;
+}
