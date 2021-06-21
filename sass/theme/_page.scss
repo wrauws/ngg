@@ -1,8 +1,13 @@
 
 // Changes the styling of the page
 
+// Remove Space between header and content
 #page-wrapper.wrapper {
-    padding: 0px; // removes the padding, padding is added on the primary to get a full background height
+    padding: 0px;
+    height: 100%;
+}
+#archive-wrapper.wrapper {
+    padding: 0px;
     height: 100%;
 }
 

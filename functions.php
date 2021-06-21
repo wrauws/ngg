@@ -66,7 +66,7 @@ function wpb_postsbycategorynews() {
     add_shortcode('categorypostsnews', 'wpb_postsbycategorynews');
 
 
-// Events category
+// Events category (no widget so this is the alternate option)
 function wpb_postsbycategoryevents() {
     // the query
     $the_query = new WP_Query( array( 
