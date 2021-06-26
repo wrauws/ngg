@@ -20,21 +20,39 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div class="<?php echo esc_attr( $container ); ?>">
 
 		<div class="row">
+			<!-- OLD CONTENT (between col-12 > now 4)-->
+			<!-- <footer class="site-footer" id="colophon"> -->
+			<!-- <div class="site-info"> -->
+			<!-- </div> //.site-info -->
+			<!-- </footer> //#colophon -->
 
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
+			<div id="left-footer-part" class="col-md-4 col-sm-12">
+				<?php
+					if ( is_active_sidebar( 'footer-widget-area-left' ) ) : ?>
+					<div id="footer-widgetS-left" class="chw-widget-area widget-area" role="complementary">
+						<?php dynamic_sidebar( 'footer-widget-area-left' ); ?>
+					</div>
+				<?php endif; ?>
 			</div><!--col end -->
 
+			<div id="mid-footer-part" class="col-md-4 col-sm-12">
+				<?php
+					if ( is_active_sidebar( 'footer-widget-area-mid' ) ) : ?>
+					<div id="footer-widget-mid" class="chw-widget-area widget-area" role="complementary">
+						<?php dynamic_sidebar( 'footer-widget-area-mid' ); ?>
+					</div>
+				<?php endif; ?>
+			</div><!--col end -->
+
+			<div id="right-footer-part" class="col-md-4 col-sm-12">
+				<?php
+					if ( is_active_sidebar( 'footer-widget-area-right' ) ) : ?>
+					<div id="footer-widget-right" class="chw-widget-area widget-area" role="complementary">
+						<?php dynamic_sidebar( 'footer-widget-area-right' ); ?>
+					</div>
+				<?php endif; ?>
+			</div><!--col end -->
+			
 		</div><!-- row end -->
 
 	</div><!-- container end -->

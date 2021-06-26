@@ -9,6 +9,14 @@
     padding-bottom: 30px; //  same as top sidebar 
 }
 
+.postsbycategory a {
+    font-weight: bold;
+}
+
+#custom_html-2 {
+    margin-top: 1rem;
+}
+
 //RESPONSIVE STYLING
 @media only screen and (max-width: 575px) {
     #primary {

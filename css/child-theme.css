@@ -11612,9 +11612,6 @@ figure.woocommerce-product-gallery__wrapper {
 .gallery-caption {
   display: block; }
 
-h1 h2 h3 h4 p a {
-  word-break: break-all; }
-
 /*
 * Use existing Bootstrap 4 classes and
 * variables to extend - override CF7 style
@@ -11679,6 +11676,12 @@ h1 h2 h3 h4 p a {
 a {
   color: #c55d3b; }
 
+@media only screen and (max-width: 575px) {
+  h2 {
+    word-break: break-all; }
+  h3 {
+    word-break: break-all; } }
+
 #single-wrapper {
   padding: 0px 0px; }
 
@@ -11688,6 +11691,12 @@ a {
 
 #right-sidebar .widget_search {
   padding-bottom: 30px; }
+
+.postsbycategory a {
+  font-weight: bold; }
+
+#custom_html-2 {
+  margin-top: 1rem; }
 
 @media only screen and (max-width: 575px) {
   #primary {

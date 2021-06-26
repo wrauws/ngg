@@ -98,4 +98,47 @@ function wpb_postsbycategoryevents() {
     }
     // Add a shortcode
     add_shortcode('categorypostsevents', 'wpb_postsbycategoryevents');
+
+    // Custom Widgets for Footer
+    // Left Footer widget Area
+    function footer_widget_left() {
+ 
+        register_sidebar( array(
+            'name'          => 'Footer Left Area',
+            'id'            => 'footer-widget-area-left',
+            'before_widget' => '<div class="chw-widget">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="chw-title">',
+            'after_title'   => '</h2>',
+        ) );
+    }
+    add_action( 'widgets_init', 'footer_widget_left' );
+
+    // Middle Footer widget Area
+    function footer_widget_mid() {
+ 
+        register_sidebar( array(
+            'name'          => 'Footer Middle Area',
+            'id'            => 'footer-widget-area-mid',
+            'before_widget' => '<div class="chw-widget">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="chw-title">',
+            'after_title'   => '</h2>',
+        ) );
+    }
+    add_action( 'widgets_init', 'footer_widget_mid' );
+    
+    // Right Footer widget Area
+    function footer_widget_right() {
+ 
+        register_sidebar( array(
+            'name'          => 'Footer Right Area',
+            'id'            => 'footer-widget-area-right',
+            'before_widget' => '<div class="chw-widget">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2 class="chw-title">',
+            'after_title'   => '</h2>',
+        ) );
+    }
+    add_action( 'widgets_init', 'footer_widget_right' );
 ?>
