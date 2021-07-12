@@ -6,5 +6,9 @@
     color: #ffffff;
 }
 
-//footer to the bottom fix
-
+// Deletes Bullits from the footer menu
+#wrapper-footer {
+    ul {
+        list-style-type: none;
+    }
+}

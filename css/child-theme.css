@@ -11698,6 +11698,9 @@ a {
 #custom_html-2 {
   margin-top: 1rem; }
 
+.postsbycategory {
+  list-style-type: none; }
+
 @media only screen and (max-width: 575px) {
   #primary {
     padding-left: 30px !important;
@@ -11706,5 +11709,8 @@ a {
 .footer-style {
   background-color: #000000;
   color: #ffffff; }
+
+#wrapper-footer ul {
+  list-style-type: none; }
 
 /*# sourceMappingURL=child-theme.css.map */
